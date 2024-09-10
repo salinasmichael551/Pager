@@ -1,0 +1,146 @@
+/*
+COLOR PALETTE
+
+PAGER BACKGROUND: #283033
+PAGER DISPLAY: #9EC4B3
+PAGER DISPLAY TEXT COLOR: #000000
+
+PHONE BACKGROUND: #D9D9D9
+PHONE DISPLAY: #9EC4B3
+PHONE DISPLAY TEXT COLOR: #F8F8F8
+PHONE KEY: #F8F8F8
+
+RESET AND SEND BUTTON BORDER COLOR: #0B0B0B
+
+RESET BUTTON BACKGROUND: #BE482A
+RESET BUTTON TEXT COLOR: #F8F8F8
+
+SEND BUTTON BACKGROUND: #3D9C7C
+SEND BUTTON TEXT COLOR: #0B0B0B
+*/
+
+/*hypertext markup*/
+
+header, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Classes */
+
+.container{
+    border: 5px solid black;
+    border-radius: 2%;
+    width: 500px;
+    margin: 0 auto;
+    height: 580px;
+}
+
+.pager{
+    background: #283033;
+    color: white;
+    padding: 55px 0px;
+    margin-top: 15px;
+}
+
+.text-pager{
+    position: absolute;
+    top: -10px;
+    left: 150px;
+}
+
+.pager-display{
+    background: #9EC4B3;
+    position: absolute;
+    bottom: 15px;
+    left: 24px;
+    color: black;
+    text-align: center;
+}
+
+.phone{
+    background: #D9D9D9;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    
+}
+
+.text-phone{
+    position: absolute;
+    top: -10px;
+    left: 150px;
+}
+
+.phone-display{
+    background: #444444;
+    position: absolute;
+    top: 40px;
+    left: 24px;
+    color: white;
+}
+
+.key{
+    background: #F8F8F8;
+    padding: 8px 45px;
+    border: none;
+    margin: 2px -15px 2px 28px;
+    
+}
+
+.reset-send{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 345px;
+    margin: 2px -15px 2px 28px;
+}
+
+.reset{
+    background: #BE482A;
+    color: #F8F8F8;
+    margin-top: 10px;
+}
+
+.send{
+    background: #3D9C7C;
+    color: #0B0B0B; 
+}
+
+/*Grouped Classes and Elements*/
+
+body, .key{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.phone, .pager{
+    width: 400px;
+    position: relative;
+}
+
+.pager-display, .phone-display{
+    padding: 25px;
+    width: 300px;
+    height: 8px;
+}
+
+.first-row, .second-row, .third-row, .fourth-row{
+    display: flex;
+    flex-direction: row;
+    }
+
+.reset, .send{
+    padding: 10px;
+     font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
